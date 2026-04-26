@@ -1,65 +1,29 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+// TYPING EFFECT
+const text = "Cyber Security Researcher | Digital Forensics Enthusiast";
+let i = 0;
+function typing() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 50);
+  }
 }
+typing();
 
-.hero {
-    height: 100vh;
-    background: linear-gradient(to right, #0f172a, #1e293b);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+// SCROLL ANIMATION
+const faders = document.querySelectorAll(".fade");
 
-.hero h1 {
-    font-size: 3rem;
-}
+window.addEventListener("scroll", () => {
+  faders.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) {
+      el.classList.add("show");
+    }
+  });
+});
 
-.btn {
-    background: #3b82f6;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.dark {
-    background: #111827;
-    color: white;
-}
-
-.skills span {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    background: #3b82f6;
-    color: white;
-    border-radius: 5px;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: #f4f4f4;
-    margin: 15px;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-}
+// DARK MODE TOGGLE
+const toggle = document.getElementById("toggle");
+toggle.onclick = () => {
+  document.body.classList.toggle("light");
+};
