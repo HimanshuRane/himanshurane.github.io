@@ -24,6 +24,13 @@ window.addEventListener("scroll", () => {
 
 // DARK MODE TOGGLE
 const toggle = document.getElementById("toggle");
+
 toggle.onclick = () => {
   document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    toggle.innerHTML = "☀️";
+  } else {
+    toggle.innerHTML = "🌙";
+  }
 };
