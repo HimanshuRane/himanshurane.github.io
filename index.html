@@ -1,98 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Himanshu Rane | Portfolio</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Himanshu Rane | Cybersecurity Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Himanshu Rane, cybersecurity and digital forensics analyst focused on DFIR, forensic investigation, SIEM monitoring, cloud security, and cybercrime investigation support."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top">Himanshu Rane</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero__image" src="assets/cyber-hero.png" alt="Cybersecurity operations workspace with dashboards and network analysis screens">
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Cybersecurity & Digital Forensics Analyst</p>
+          <h1 id="hero-title">DFIR, forensic evidence, and threat detection.</h1>
+          <p class="hero__lead">
+            I am a cybersecurity and digital forensics postgraduate with hands-on exposure to forensic lab workflows,
+            cybercrime investigation support, disk and memory forensics, SIEM monitoring, and cloud security.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="mailto:himanshu.rane.304@gmail.com">Email Me</a>
+            <a class="button button--secondary" href="assets/HimanshuRane_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+        </div>
+      </section>
 
-</head>
-<body>
+      <section class="quick-facts" aria-label="Profile highlights">
+        <div>
+          <strong>Digital Forensics</strong>
+          <span>Disk, memory, mobile, network, artifact, and timeline analysis</span>
+        </div>
+        <div>
+          <strong>M.Sc. Cyber Security</strong>
+          <span>National Forensic Sciences University, 2025-27</span>
+        </div>
+        <div>
+          <strong>CTF Team Lead</strong>
+          <span>Top 5% national and international online rankings</span>
+        </div>
+      </section>
 
-<!-- NAV -->
-<nav>
-  <h2>HR</h2>
-  <div>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-    <button id="toggle">🌙</button>
-  </div>
-</nav>
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="section__heading">
+          <p class="eyebrow">Profile</p>
+          <h2 id="intro-title">Evidence-focused security with practical investigation depth.</h2>
+        </div>
+        <p>
+          I focus on forensic evidence handling, threat analysis, incident response, and translating technical
+          findings into clear investigation support. My work spans disk, memory, mobile, and network forensics,
+          SIEM monitoring, cloud security, OSINT, malware triage, and log and artifact analysis.
+        </p>
+      </section>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>Himanshu Rane</h1>
-  <p id="typing"></p>
-  <a href="resume.pdf" class="btn" download>Download Resume</a>
-</section>
+      <section id="work" class="section" aria-labelledby="work-title">
+        <div class="section__heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="work-title">Field work across forensic labs, cloud, and community.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__meta">May 2026 - Jun 2026</div>
+            <div>
+              <h3>Digital Forensics Intern</h3>
+              <p class="muted">National Cyber Forensic Laboratory (CFSL)</p>
+              <p>
+                Assisted in cybercrime investigations under law enforcement supervision, including disk, memory, and
+                mobile forensics; forensic image review; timeline reconstruction; log analysis; IOC discovery; and
+                system and network correlation.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__meta">Jan 2024 - Dec 2024</div>
+            <div>
+              <h3>Campus Ambassador</h3>
+              <p class="muted">LinkedIn</p>
+              <p>
+                Led webinars and campus engagement initiatives while strengthening public communication, leadership,
+                and professional networking programs.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__meta">Jun 2023 - Nov 2023</div>
+            <div>
+              <h3>Project Intern</h3>
+              <p class="muted">Indira University</p>
+              <p>
+                Collaborated with the AWS cloud team on cloud integration, infrastructure implementation, operations,
+                scalability, reliability, and performance support.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-<!-- ABOUT -->
-<section id="about" class="section fade">
-  <h2>About Me</h2>
-  <p>
-    Cybersecurity researcher with real-world cybercrime investigation experience,
-    specializing in VAPT, AWS security, and digital forensics.
-  </p>
-</section>
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section__heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Projects with safety, attack simulation, and secure workflow context.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card__top"><span>App + wearable device</span></div>
+            <h3>BeSafe</h3>
+            <p>
+              Smart personal safety system with multi-trigger SOS activation through gesture, power button, and
+              wearable input. Enabled live tracking, alerts, evidence capture, and cloud integration, earning patent
+              filings and IGI Hackathon and IIC recognition.
+            </p>
+            <ul class="tags">
+              <li>Safety Tech</li>
+              <li>Wearable Input</li>
+              <li>Evidence Capture</li>
+              <li>Cloud Integration</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <div class="project-card__top"><span>HID security evaluation</span></div>
+            <h3>Hyper-X Injector</h3>
+            <p>
+              USB HID-based keystroke injection framework using Raspberry Pi Pico and DuckyScript for attack
+              simulation, endpoint security evaluation, safer manual trigger control, and forensic analysis of USB
+              logs and process traces.
+            </p>
+            <ul class="tags">
+              <li>DuckyScript</li>
+              <li>HID Attacks</li>
+              <li>Raspberry Pi</li>
+              <li>Forensic Artifacts</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <div class="project-card__top"><span>Conceptual secure payment design</span></div>
+            <h3>Biometric-Based Payment System</h3>
+            <p>
+              Designed a biometric payment system concept integrating UID authentication with banking infrastructure,
+              secure fingerprint-based transaction processing, and backend verification workflows.
+            </p>
+            <ul class="tags">
+              <li>Biometrics</li>
+              <li>UID Auth</li>
+              <li>Secure Workflow</li>
+              <li>Backend Verification</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section dark fade">
-  <h2>Skills</h2>
-  <div class="skills">
-    <div>VAPT</div>
-    <div>AWS</div>
-    <div>Python</div>
-    <div>Forensics</div>
-    <div>Burp Suite</div>
-    <div>Wireshark</div>
-  </div>
-</section>
+      <section class="section accomplishments" aria-labelledby="impact-title">
+        <div class="section__heading">
+          <p class="eyebrow">Impact</p>
+          <h2 id="impact-title">Applied security beyond coursework.</h2>
+        </div>
+        <div class="impact-list">
+          <article>
+            <h3>Pune Cyber Cell</h3>
+            <p>
+              Supported cybercrime investigations involving digital forensics, evidence analysis, threat analysis,
+              and investigation-focused reporting.
+            </p>
+          </article>
+          <article>
+            <h3>Awards and Recognition</h3>
+            <p>
+              Earned special mention at IGI Hackathon, 1st Prize at Institute Innovation Council for BeSafe, 1st
+              Position in CyberTank and Tech Parliament, and 2nd Position at a national forensic sciences conference.
+            </p>
+          </article>
+          <article>
+            <h3>Speaking and Leadership</h3>
+            <p>
+              Delivered cybersecurity and digital forensics sessions as a guest speaker and trainer while leading CTF
+              efforts to top 5% national and international competition rankings.
+            </p>
+          </article>
+        </div>
+      </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section fade">
-  <h2>Projects</h2>
+      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+        <div class="section__heading">
+          <p class="eyebrow">Toolkit</p>
+          <h2 id="skills-title">Forensics, monitoring, security testing, and cloud tooling.</h2>
+        </div>
+        <div class="skills-layout">
+          <div>
+            <h3>Core Strengths</h3>
+            <ul class="skill-cloud">
+              <li>Digital Forensics</li>
+              <li>Incident Response</li>
+              <li>Threat Analysis</li>
+              <li>Digital Evidence Handling</li>
+              <li>Chain of Custody</li>
+              <li>Log & Artifact Analysis</li>
+              <li>Network Traffic Analysis</li>
+              <li>Incident Analysis</li>
+              <li>Cloud Security</li>
+              <li>OSINT</li>
+              <li>Payload Scripting</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul class="skill-cloud">
+              <li>Autopsy</li>
+              <li>EnCase</li>
+              <li>FTK</li>
+              <li>Magnet AXIOM</li>
+              <li>Cellebrite UFED</li>
+              <li>Tableau</li>
+              <li>Volatility</li>
+              <li>Oxygen Forensics</li>
+              <li>Sleuth Kit</li>
+              <li>WinHex</li>
+              <li>Sysinternals Suite</li>
+              <li>Splunk</li>
+              <li>Wazuh</li>
+              <li>ELK Stack</li>
+              <li>Sysmon</li>
+              <li>Wireshark</li>
+              <li>Nessus</li>
+              <li>Burp Suite</li>
+              <li>Metasploit</li>
+              <li>Hydra</li>
+              <li>Nmap</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-  <div class="projects">
+      <section class="section education-certifications" aria-labelledby="education-title">
+        <div class="section__heading">
+          <p class="eyebrow">Education and Certifications</p>
+          <h2 id="education-title">Formal study backed by applied credentials.</h2>
+        </div>
+        <div class="split-list">
+          <div>
+            <h3>Education</h3>
+            <ul>
+              <li><strong>B.Sc. Cyber Security</strong><span>Savitribai Phule Pune University, 2022-25</span></li>
+              <li><strong>M.Sc. Cyber Security</strong><span>National Forensic Sciences University, 2025-27</span></li>
+              <li><strong>Diploma in Cyber Law</strong><span>Savitribai Phule Pune University, 2025-26</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Certifications</h3>
+            <ul>
+              <li>C-DAC Hyderabad - Machine Learning</li>
+              <li>Cisco CCNA 200-301 GenAI/ML</li>
+              <li>Certified Black Hat Pentester, EC-Council</li>
+              <li>IT Security Specialist, LinkedIn</li>
+              <li>Computer Forensics & Security, LinkedIn</li>
+              <li>Threat Modeling & Vulnerability Management, LinkedIn</li>
+              <li>Quick Heal CyberShiksha</li>
+              <li>THM Advent of Cyber, TryHackMe</li>
+              <li>Advanced Microsoft 365 Suite</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180">
-      <h3>Cybercrime Investigation</h3>
-      <p>Worked with real cases.</p>
-      <a href="#">GitHub</a>
-    </div>
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's talk DFIR, forensic investigations, CTFs, or cloud security.</h2>
+        </div>
+        <div class="contact__actions">
+          <a class="button button--primary" href="mailto:himanshu.rane.304@gmail.com">himanshu.rane.304@gmail.com</a>
+          <a class="button button--secondary" href="https://www.linkedin.com/in/ranehimanshu" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180">
-      <h3>Web Security Testing</h3>
-      <p>Performed VAPT.</p>
-      <a href="#">GitHub</a>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x180">
-      <h3>Python Automation</h3>
-      <p>Automation scripts.</p>
-      <a href="#">GitHub</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section dark fade">
-  <h2>Contact</h2>
-  <p>Email: yourmail@example.com</p>
-  <p>GitHub: github.com/yourusername</p>
-</section>
-
-<footer>
-  <p>© 2026 Himanshu Rane</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <footer>
+      <span>Himanshu Rane</span>
+      <span>English | Hindi | Marathi | French and German elementary</span>
+    </footer>
+  </body>
 </html>
